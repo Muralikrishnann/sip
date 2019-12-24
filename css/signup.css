@@ -1,0 +1,95 @@
+body{
+    margin:0;
+    padding:0;
+    background: url(abstract-blue-gradient-background-design-with-stripes_39405-41.jpg);
+    font-family: sans-serif;
+}
+.login{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:350px;
+    min-height: 200px;
+    background:rgb(3, 3, 3);
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    }
+    .img
+    {
+        padding-left: 8px;
+    }
+    .user
+    {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    h3{
+        margin: 0;
+        padding: 0 10px 10px;
+        color:white;
+        font-weight: bold;
+        font-size: 17px;
+    }
+.login input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login input[type="email"],
+.login input[type="password"]
+{
+    border:none;
+    border-bottom: 3px solid blue;
+    outline:none;
+    height: 30px;
+    color:white;
+    background: transparent;
+    font-size: 16px;
+    font-weight: bold;
+}
+.login input[type="email"]:hover,
+.login input[type="password"]:hover
+{
+    border-bottom: 3px solid white;
+}
+.inputBox
+{
+    position: relative;
+}
+.inputBox span{
+    position: relative;
+    top:30px;
+    right:20px;
+    color:blue;
+}
+.btn{
+    
+outline:none;
+height: 35px;
+font-size: 16px;
+background:black;
+color: white;
+border-radius: 16px;
+font-weight: bold;
+cursor: pointer;
+transition:ease-in-out;
+border-radius: 10px;
+border-bottom:3px solid white;
+border-top: 3px solid white;
+border-left: 3px solid white;
+border-right:3px solid white;
+}
+.btn:hover
+{
+    
+    font-size: 18px;
+    background: white;
+    color:blue;
+    border-radius: 16px;
+    border-bottom:2px solid black;
+border-top: 2px solid black;
+border-left: 2px solid black;
+border-right:2px solid black;
+}

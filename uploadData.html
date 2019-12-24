@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload data</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/upload.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="login">
+      <img class="img" src="css/bg4.jpg">
+     
+ 
+        <div class="inputBox">  
+          Name:<input type="text" id="name" placeholder="Enter Student Name" required>
+        </div>
+        Student ID:
+        <div class="inputBox">  
+        <input type="number" id="studid" placeholder="Enter Student Id" required>
+        </div>
+        
+     
+       <p> Department:</p>
+        <div class="box">  
+        <select id="dept">
+          <option value="Information Technology">Information Technology</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Mechanical">Mechanical</option>
+          <option value="Electronics & communication">Electronics & communication</option>
+          <option value="Electrical & Electronics">Electrical & Electronics</option>
+        </select>
+        </div>
+     
+        <p> Year: </p>  
+        <div class="box">  
+          <select  id="year">
+          <option value="1">First</option>
+          <option value="2">Second</option>
+          <option value="3">Third</option>
+          <option value="4">Final</option>
+        </select>
+        </div>
+        Arrears:
+        <label class="container">
+          <p style="font-size: 17px;"> Nill</p><input type="radio" id="arrears" value="Nill">
+          <span class="checkmark"></span></label>
+          <label class="container"> 
+            <p style="font-size: 17px;">Yes</p><input type="radio" id="arrears" value="Yes"> 
+              <span class="checkmark"></span>
+        </label>
+        <tr>
+          Gpa:
+          <div class="inputBox">  
+          <input type="number" id="gpa" placeholder="Gpa in %" required>
+          </div>
+          <td>Stay By:</td>
+             <td> <label class="container">
+            <p style="font-size: 17px;">:Day Scholar</p><input type="radio" id="stay" value="DayScholar">
+          <span class="checkmark"></span></label></td>
+          <td>
+          <label class="container"> 
+            <p style="font-size: 17px;">:Hosteller</p><input type="radio" id="stay" value="Hosteller"> 
+              <span class="checkmark"></span>
+        </label></td>
+      </tr>
+      Age:
+      <div class="inputBox">  
+      <input type="number" id="age"  placeholder="Enter Age" required>
+      </div>
+     
+      D.O.B:
+      <div class="inputBox">  
+        <input type="text" id="date" required>
+      </div>
+      Gender:
+      <label class="container">
+       <p style="font-size: 17px;"> :Male</p><input type="radio" id="gender" value="Male">
+        <span class="checkmark"></span></label>
+        <label class="container"> 
+          <p style="font-size: 17px;">Female</p><input type="radio" id="gender" value="Female"> 
+            <span class="checkmark"></span>
+      </label>
+      Phone:
+        <div class="inputBox">  
+        <input type="number" id="phone" placeholder="Enter Phone number" required><br>
+        </div>
+        Mail Id:
+        <div class="inputBox">  
+        <input type="email" id="mailid" placeholder="Enter MailId" required><br>
+        </div>
+          Admission type
+          <label class="container">
+            <p style="font-size: 17px;">:Counselling</p><input type="radio" id="adm" value="Counselling">
+            <span class="checkmark"></span></label>
+            <label class="container"> 
+              <p style="font-size: 17px;">Management</p><input type="radio" id="adm" value="Management"> 
+                <span class="checkmark"></span>
+          </label>
+      
+     
+       
+        Parent/Guardian Name:
+        <div class="inputBox">  
+        <input type="text" id="pgname" placeholder="Parent/Guardian" required>
+        </div>
+        Address:
+        <div class="inputBox">  
+        <textarea rows="4" cols="30" id="address" placeholder="Enter Your Home Address" style=" font-weight: bold; font-size: 18px; height: 100px; width:510px; color:purple"  required></textarea>
+          </div>
+        
+          <input type="button" class="btn" value="Upload" onclick="upload();">
+          <input type="button" class="btn" value="Add more" onclick="adddata();">
+          <input type="button" class="btn" value="Get Data" onclick="getdata();">
+        </div>
+   
+      <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCCO3JbKzbkFkAKyrx24i8AIYgisxxqiWg",
+          authDomain: "booknow-99638.firebaseapp.com",
+          databaseURL: "https://booknow-99638.firebaseio.com",
+          projectId: "booknow-99638",
+          storageBucket: "booknow-99638.appspot.com",
+          messagingSenderId: "115297448933",
+          appId: "1:115297448933:web:69e0b7a63ad0e94ea6f50c",
+          measurementId: "G-FYWKD86D6G"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+      <script src="js/uploadData.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase.js"></script>
+<link rel="stylesheet" type="text/css" href="css/getdata.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="login">
+  <h3>Enter Student Id to get information</h3> 
+  <input  type="number" id="sid" placeholder="Student Id" required><br>
+  <input type="button" class="btn" onclick="getdata();" value="Get Data"></button>
+  <div class="h">
+    <p>    Name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="username"></strong></p>
+    <p>   Year:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="syear"></strong></p>
+    <p>   Stud id:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="sstudid"></strong></p>
+    <p>   Department:&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="sdept"></strong></p>
+    <p>   Stay By:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="sstay"></strong></p>
+    <p>   Admission:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="sadmt"></strong></p>
+    <p>   Gpa:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="sgpa"></strong></p>
+    <p>   Arrears:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="sarrears"></strong></p>
+    <p>   Parent/Guardian:&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="spgname"></strong></p>
+    <p>   Age:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="sage"></strong></p>
+    <p>   D.O.B:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="sbday"></strong></p>
+    <p>   Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="sgender"></strong></p>
+    <p>   Phone:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="sphone"></strong></p>
+    <p>   Mailid:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="smailid"></strong></p>
+    <p>   Address:&nbsp&nbsp&nbsp&nbsp&nbsp<strong id="saddress"></strong></p>   
+  </div>
+  </div>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCCO3JbKzbkFkAKyrx24i8AIYgisxxqiWg",
+          authDomain: "booknow-99638.firebaseapp.com",
+          databaseURL: "https://booknow-99638.firebaseio.com",
+          projectId: "booknow-99638",
+          storageBucket: "booknow-99638.appspot.com",
+          messagingSenderId: "115297448933",
+          appId: "1:115297448933:web:69e0b7a63ad0e94ea6f50c",
+          measurementId: "G-FYWKD86D6G"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+      <script src="js/getdata.js" type="text/javascript"></script>
+    
+</body>
+</html>
